@@ -127,7 +127,10 @@ export default function Header() {
           
           
         </div>
+        
+
         <img src="/Group-1.png" alt="girl " className="w-145 h-150 ml-30"/>
+        <div className="absolute w-[10000px] h-[400px] bg-gradient-to-l from-[#261129]  via-[#01002A]   via-[#A05B99] to-[#01002A] opacity-60 filter blur-[150px] top-0 right-0"></div>
       </section>
       <div className="flex items-center justify-center h-40 w-full mt-13">
          <img src="/center.svg" alt="bookmark" />
@@ -135,19 +138,41 @@ export default function Header() {
 
       <section className="ml-10 flex flex-row mt-20 max-w-[1280px] mx-auto mr-3">
       {/* بخش هدر و باتن بالایی */}
-      <div className="mb-12 mr-90">
-        <button className="inline-flex items-center gap-2 px-3 py-2 bg-[#251D26] text-white rounded-full mb-4">
-          invest smarter
-          <ArrowOutward className="w-5 h-5 text-white opacity-75" />
-        </button>
-        <p className="text-white font-bold text-4xl mb-4">How we can help you grew?</p>
-        <button className="inline-flex items-center gap-2 px-4 py-2 border-2 border-[#48424F] rounded-full">
-          <span className="text-white font-semibold">Book a Discovery</span>
-          <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#48424F]">
-            <ArrowOutward className="w-5 h-5 text-white" />
-          </span>
-        </button>
-      </div>
+
+      <div className="relative mb-12 mr-90">
+      <div className="absolute w-[1118px] h-[453px] bg-gradient-to-r from-[#EA80C3] via-[#A1B7F1] via-[#30096F] via-[#FF9ADA] to-[#01002A] opacity-60 filter blur-[150px]"></div>
+
+  {/* نور نرم و غالباً صورتی/بنفش */}
+  <div
+    className="absolute -inset-10 w-[100%] h-[100%] pointer-events-none rounded-full blur-3xl"
+    style={{
+      // background: `linear-gradient(120deg, #EA80C3 20%, #A1B7F1 50%, #30096F 70%, #FF9ADA 85%, #01002A 100%);`,   /* یه تیرگی ملایم برای عمق */
+      zIndex: -1,
+      opacity: 0.7,
+    }}
+  />
+
+  {/* محتویات اصلی */}
+  <button className="inline-flex items-center gap-2 px-3 py-2 bg-[#251D26] text-white rounded-full mb-4">
+    invest smarter
+    <ArrowOutward className="w-5 h-5 text-white opacity-75" />
+  </button>
+
+  <p className="text-white font-bold text-4xl mb-4">
+    How we can help you grew?
+  </p>
+
+  <button className="inline-flex items-center gap-2 px-4 py-2 border-2 border-[#48424F] rounded-full">
+    <span className="text-white font-semibold">Book a Discovery</span>
+    <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#48424F]">
+      <ArrowOutward className="w-5 h-5 text-white" />
+    </span>
+  </button>
+</div>
+
+
+
+      
 
       {/* کارت‌ها */}
       <div className="grid grid-cols-2 gap-6 text-white">

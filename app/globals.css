@@ -21,11 +21,11 @@
 } */
 
 body {
-  background-image: url(/wrapper.png);
+  /* background-image: url(/wrapper.png);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  
+  background-repeat: no-repeat; */
+  background-color: black;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   

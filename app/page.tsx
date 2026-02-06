@@ -1,5 +1,7 @@
 import Header from "@/components/Header/Header";
 import ArrowOutward from "@/components/icon/ArrowOutward";
+import HeroSection2 from "@/components/HeroSection2";
+import HeroSection3 from "@/components/HeroSection3";
 
 export default function Home() {
   return (
@@ -28,7 +30,8 @@ export default function Home() {
       {/* محتوا */}
       <div className="relative z-10">
         <Header />
-        
+        <HeroSection2 />
+        <HeroSection3 />
       </div>
 
     </div>
